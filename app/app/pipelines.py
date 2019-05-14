@@ -165,6 +165,7 @@ class QmplanPipeline(object):
                 'killCount': item['kill_count'],
                 'value': item['value'],
                 'handicap': item['handicap'],
+                'topicableType': item['topicable_type'],
             })
 
             data = res.json()
@@ -183,6 +184,7 @@ class QmplanPipeline(object):
                     'status': odd['status'],
                     'checkoutStatus': odd['checkout_status'],
                     'result': odd['result'],
+                    'type': odd['type'],
                 })
             
         
